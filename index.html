@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Name Sorter</title>
+	<link href='//fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style.css">
+	<script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+	<script src="main.js"></script>
+</head>
+<body>
+	<div id="entryField">
+		<h4>Let's Sort Some Data</h4>
+		<span>Enter Grocery Item</span>
+		<input type="text" id="item">
+		<br>
+		<span>Enter Price</span>
+		<span id='dollarSign'>$</span><input type="number" id="price" value='0.00'step='0.01' min='0' max='9999.99'>
+		<br>
+		<button id="submit">Submit</button>
+	</div>
+	<div id='container'>
+		<div class="block">
+			<div id="unsortedList" class='list'>
+				<div class="total">Total: $</div>
+			</div>
+		</div>
+		<div class="block">
+			<div class="list">
+				<div class="total">Total: $</div>
+			</div>
+			<div class="list">
+				<div class="total">Total: $</div>
+			</div>
+		</div>
+		<div class="block">
+			<div class="list">
+				<div class="total">Total: $</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
